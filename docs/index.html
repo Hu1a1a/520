@@ -53,9 +53,99 @@
         </div>
     </div>
     </div>
+    <style>
+        html {
+            height: 1200px;
+            width: 800px;
+        }
 
-    <script>
-    </script>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #FDF8F8;
+            font-size: 50px;
+            font-family: "微软雅黑", "宋体", sans-serif;
+            color: #231f20;
+            overflow: auto;
+            height: 1200px;
+            width: 800px;
+        }
+
+        a {
+            color: #000;
+            font-size: 50px;
+        }
+
+        #wrap {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+        #text {
+            left: 100px;
+            top: 100px;
+            width: 800px;
+            height: 500px;
+            position: absolute;
+        }
+
+        #code {
+            display: none;
+            font-size: 50px;
+        }
+
+        #clock-box {
+            position: absolute;
+            left: 100px;
+            top: 1135px;
+            font-size: 35px;
+            width: 1000px;
+            display: none;
+        }
+
+        #clock-box a {
+            font-size: 28px;
+            text-decoration: none;
+        }
+
+        #clock {
+            margin-left: 48px;
+        }
+
+        #clock .digit {
+            font-size: 64px;
+        }
+
+        #canvas {
+            margin: 0 auto;
+            width: 1200px;
+            height: 2000px;
+        }
+
+        #error {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 60px;
+            display: none;
+        }
+
+        .hand {
+            cursor: pointer;
+        }
+
+        .say {
+            margin-left: 5px;
+        }
+
+        .space {
+            margin-right: 150px;
+        }
+    </style>
+
+
 
     <script>
         (function () {
