@@ -4,8 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Love</title>
-
+    <title>520快乐</title>
     <link type="text/css" rel="stylesheet" href="default.css">
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="jscex.min.js"></script>
@@ -16,27 +15,43 @@
     <script type="text/javascript" src="jscex-async-powerpack.min.js"></script>
     <script type="text/javascript" src="functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="love.js" charset="utf-8"></script>
+    <audio id="video2" src="love2.mp3" autoplay></audio>
+    <audio id="video" src="love.mp3" autoplay></audio>
 
 </head>
 
 <body>
     <div id="main">
+        <img id="cond" src="cond.gif" style="position: absolute;width: 800px;height: auto;left: 200px;">
+        <img id="520p" src="520.png" style="position: absolute;width: 800px;height: auto;left: 200px;top: 1500px;">
         <div id="wrap">
             <div id="text">
                 <div id="code">
+                    <img src="love.gif" alt="">
+                    <br>
                     <span class="say">
-                        我有好多好多话想对你说，但是我就不说。哼！
+                        金丽章小朋友，
+                        <br> <br>
+                        你晓得么，
+                        <br> <br>
+                        我有好多好多话想对你说，
+                        <br> <br>
+                        但是我就不说。
+                        <br> <br>
+                        哼！
                     </span><br>
                 </div>
             </div>
             <div id="clock-box">
-                你知道么宝宝，这是我们在一起的
+                但是宝宝你知道么，这是我们在一起的
                 <div id="clock"></div>
                 我们还有 &#8734; 天可以在一起哦！
             </div>
             <canvas id="canvas" width="1200" height="2200"></canvas>
+            <h5 style="font-size: 1px; position: absolute;left: 1000px;height: 100px;width: 200px;color:red;">Me debes
+                500€ por esto.</h5>
         </div>
-        <audio src="love.mp3" autoplay="autoplay"></audio>
+    </div>
     </div>
 
     <script>
@@ -107,6 +122,16 @@
                     canvas.removeClass('hand');
                 }
             }).mousemove(function (e) {
+
+                setTimeout(() => {
+                    document.getElementById("cond").style.display = "none"
+
+                }, 5000); setTimeout(() => {
+                    document.getElementById("520p").style.display = "none"
+
+                }, 2000);
+
+
                 var offset = canvas.offset(), x, y;
                 x = e.pageX - offset.left;
                 y = e.pageY - offset.top;
@@ -186,6 +211,7 @@
             }));
 
             var runAsync = eval(Jscex.compile("async", function () {
+
                 $await(seedAnimate());
                 $await(growAnimate());
                 $await(flowAnimate());

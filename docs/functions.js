@@ -66,6 +66,6 @@ function timeElapse(date) {
     minutes +
     '</span> 分钟 <span class="digit">' +
     seconds +
-    "</span> 秒";
+    "</span> 秒哦！";
   $("#clock").html(result);
 }
